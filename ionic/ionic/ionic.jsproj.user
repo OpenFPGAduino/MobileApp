@@ -4,4 +4,14 @@
     <ToolsVersionPromptShown>1.6</ToolsVersionPromptShown>
     <ReferenceCachePath>C:\Users\ZhizhouLi\AppData\Local\Temp\ionic_refcache</ReferenceCachePath>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|iOS'">
+    <DebuggerFlavor>iOSEmulatoriPad2</DebuggerFlavor>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Windows-ARM'">
+    <DebuggerFlavor>PhoneDevice81</DebuggerFlavor>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Android'">
+    <DebuggerFlavor>RippleNexus7</DebuggerFlavor>
+    <AndroidEmulatorID>AndroidEmulator;Google Android 仿真程序</AndroidEmulatorID>
+  </PropertyGroup>
 </Project>
