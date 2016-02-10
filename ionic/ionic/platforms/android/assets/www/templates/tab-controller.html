@@ -7,12 +7,15 @@
     </ion-list>
   </ion-content>-->
   <ion-content overflow-scroll="true" padding="true" class="has-header">
-    <button class="button button-stable button-block " ng-click="move()">动了</button>
-    <button class="button button-stable button-block " ng-click="clean()">清除</button>
-      <p>动了：{{counter}}</p>
-      <div ng-repeat="l in list track by $index">
-          <p>{{l}}</p>
+      <div class="button-bar">
+          <button class="button button-stable button-block " ng-click="move()">动了</button>
+          <button class="button button-stable button-block " ng-click="clean()">清除</button>
       </div>
-    <button class="button button-stable button-block " ng-click="history()">历史</button>
+          <p>动了：{{counter}}</p>
+          <div ng-repeat="l in list track by $index">
+              <p>{{l}}</p>
+          </div>
+          <p>{{end}}</p>
+          <button class="button button-stable button-block " ng-click="history()">历史</button>
 </ion-content>
 </ion-view>
