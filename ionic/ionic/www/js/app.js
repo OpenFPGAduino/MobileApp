@@ -41,9 +41,9 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
   .state('tab.dashbroad', {
     url: '/dashbroad',
     views: {
-      'tab-dash': {
+      'tab-dashbroad': {
         templateUrl: 'templates/tab-dashbroad.html',
-        controller: 'DashCtrl'
+        controller: 'DashBroadCtrl'
       }
     }
   })
