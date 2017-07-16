@@ -21,23 +21,23 @@ angular.module('starter.services', [])
         return sign * significand * Math.pow(2, exponent);
     }
     this.led = function(r,g,b) {
-        $http.post(localStorage.hostname + "/fpga/api/call/led",
+        $http.post("http://" + localStorage.hostname + "/fpga/api/call/led",
         JSON.stringify([0, r, g, b]))
-       .then(function (response) {
+       .success(function (response) {
            console.log(response);
        });
     }
     this.temperature = function (callback) {
-        $http.post(localStorage.hostname + "/fpga/api/call/am2301_temperature",
+        $http.post("http://"+ localStorage.hostname + "/fpga/api/call/am2301_temperature",
         JSON.stringify([0]))
-       .then(function (response) {
+       .success(function (response) {
            callback(response);
        });
     }
     this.moisture = function (callback) {
-        $http.post(localStorage.hostname + "/fpga/api/call/am2301_moisture",
+        $http.post("http://" + localStorage.hostname + "/fpga/api/call/am2301_moisture",
         JSON.stringify([0]))
-       .then(function (response) {
+       .success(function (response) {
            callback(response);
        });
     }
