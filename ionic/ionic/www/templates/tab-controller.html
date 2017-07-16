@@ -1,3 +1,29 @@
-﻿<ion-view view-title="Account">
+﻿<ion-view view-title="Controller">
+    <ion-content class="padding">
+        <div class="list">
+            <div class="item range range-assertive" style="background:#ff0000">
+                <i class="icon ion-ios-sunny-outline"></i>
+                <input type="range" name="volumer" ng-model="$parent.volumer" min="0" max="255" value="100">
+                <i class="icon ion-ios-sunny"></i>
+            </div>
+            <div class="item range range-calm" style="background:#0094ff">
+                <i class="icon ion-ios-sunny-outline"></i>
+                <input type="range" name="volumeg" ng-model="$parent.volumeg" min="0" max="255" value="100">
+                <i class="icon ion-ios-sunny"></i>
+            </div>
+            <div class="item range range-balanced" style="background:#4cff00">
+                <i class="icon ion-ios-sunny-outline"></i>
+                <input type="range" name="volumeb" ng-model="$parent.volumeb" min="0" max="255" value="100">
+                <i class="icon ion-ios-sunny"></i>
+            </div>
+       </div>
+        <div align="right">
+            <button class="button button-light" ng-click="setRGB()">
+                Set
+            </button>
+            <button class="button button-light" ng-click="resetRGB()">
+                Reset
+            </button>
+       </div>
 
 </ion-view>
