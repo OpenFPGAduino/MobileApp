@@ -30,3 +30,6 @@
 
 # Debug files
 *.dSYM/
+ionic/ionic/bld
+ionic/ionic/platforms
+ionic/ionic/bin
